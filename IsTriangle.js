@@ -10,9 +10,9 @@ function calculateSumOfangles(angle1, angle2, angle3){
 function isTriangle (){
     const sumOfAngles = calculateSumOfangles (Number(inputs[0].value),Number(inputs[1].value), Number(inputs[2].value));
     if(sumOfAngles===180){
-        outputEl.innerText = "correct"
+        outputEl.innerText = "This angles form a Triangle "
     } else {
-        outputEl.innerText = "Incorrect"
+        outputEl.innerText = "This angles doesn't form Triangle " 
     }
 }
 
