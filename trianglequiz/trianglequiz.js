@@ -12,8 +12,8 @@ function calculateScore (){
         if (value === correctAnswer[index])
         score = score + 1;
     } 
-    index = index + 1;
-    outputEl.innerText = "You'r score is " + score;
+     score = score + 1;
+     outputEl.innerText = "You'r score is " + score;
 }
 
 submitAnswerBtn.addEventListener("click", calculateScore);

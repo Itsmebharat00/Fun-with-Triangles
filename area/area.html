@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,64 +9,54 @@
     <link rel="stylesheet" href="area.css">
 
 </head>
+
 <body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class=logo >Fun with Triangles</h1>
+            <nav>
+                <ul>
+                    <li><a href="/istriangle/isTriangle.html">is it triangle? </a></li>
+                
+                    <li> <a href="/trianglequiz/trianglequiz.html">Triangle Quiz </a></li>
+                    <li><a href="/hypotenuse/hypotenuse.html">Hypotenuse </a></li>
+                    <li><a href="/area/area.html"> Area of Triangle </a></li>
+                </ul>
 
-    <nav class="navigation container">
-        <div class="nav-brand">Fun With Triangles</div>
-        <ul class="list-non-bullet nav-pills">
-
-            <li class="list-item-inline">
-                <a class="link link-active" href="/istriangle/isTriangle.html">Home</a>
-            </li>
-
-            <li class="list-item-inline">
-                <a class="link" href="/trianglequiz\trianglequiz.html">Triangle Quiz</a>
-            </li>
-
-            <li class="list-item-inline">
-                <a class="link" href="/hypotenuse/hypotenuse.html">Hypotenuse</a>
-            </li>
-
-            <li class="list-item-inline">
-                <a class="link" href="/area/area.html">Area of Triangle</a>
-            </li>
-
-        </ul>
-    </nav>
+            </nav>
+        </div>
+    </div>
 
 
-    <h1>Calculate Area of a triangle</h1>
+    <h1 class="area-heading" >Calculate Area of a triangle</h1>
+     <div class="angle-form">
+        <label for="">Enter first side of a triangle: </label>
+        <input type="number" class="triangle-area">
     
-    <label for="" >Enter first side of a triangle: </label>
-     <input type="number" class="triangle-area" >
+        <label for="">Enter second side of a triangle: </label>
+        <input type="number" class="triangle-area">
+    
+     </div>
+    
+    <button id="submit-answer-btn">Calculate</button>
 
-     <label for="" >Enter second side of a triangle: </label>
-     <input type="number" class="triangle-area" >
-
-     <button id="submit-answer-btn">Calculate</button>
-
-     <div id="output-btn"></div>
+    <div id="output-btn"></div>
 
 
-     <footer class="footer">
-        <div class="footer-heading">
-            Social Media </div>
-        <ul class="social-links list-non-bullet">
+    <footer>
 
-            <li class="list-item-inline"> <a class="link" href="https://github.com/bharats9768">Github</a> 
-            </li>
+        <p class="footer-head">Bharat singh</p>
+        <a class="social-link" href="https://github.com/bharats9768/">Github</a>
 
-            <li class="list-item-inline"><a class="link" href="https://twitter.com/bharat50576866">Twitter</a>
-            </li>
+        <a class="social-link" href="https://www.linkedin.com/in/bharat-singh-ba0245222/">Linkedin</a>
 
-            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/bharat-singh-1881b9182">Linkedin</a> 
-            </li>
-        </ul>
+        <a class="social-link" href="https://twitter.com/bharat50576866">Twitter</a>
+
     </footer>
-
 
 
 
     <script src="area.js"></script>
 </body>
+
 </html>

@@ -1,102 +1,130 @@
-:root {
-    --primary-color: #5b21b6;
-    --dary-grey: #1f2937;
-    --off-white: #F9F9F9;
-}
-*{
-    
-   
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root{
+  --primary-color: #3d57c7;
+  
 }
 
+*{
+  font-family: 'Open Sans', sans-serif;
+}
 
 body{
-    background-color: var(--dary-grey);
-    color: white;
+  margin: 0px;
+  padding: 0px;
+  
+}
+ 
+.logo{
+  color: white;
+}
+
+.navbar {
+  background-color: var(--primary-color); 
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+
+.navbar ul {
+  display: flex;
+  list-style: none;  
+}
+
+.navbar a{
+   padding: 10px;
+   margin: 0 5px;
+   color: white;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex{ 
+  display: flex;
+   align-items: flex-end;
+  align-items: center;
+
+}
+
+.form-heading {
+  text-align: center;
 }
 
 .quiz-form{
-    width: 90%;
-	margin: auto;
+  text-align: center;
 }
 
-.question-container{
-    
+button{
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 
-/* Navigation */
-
-.navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    
-    
-    /* border-bottom-left-radius: 1rem; */
+#output-box{
+  text-align: center;
+  font-size: larger;
 }
 
-.navigation .container {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
 
-.navigation .nav-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 
-.navigation .link {
-    color: white;
-    border-bottom: 2px solid;
-    text-decoration: none;
-    margin-bottom: 2px;
-}
 
-.nav-pills {
-    text-align: right;
-}
 
-.list-non-bullet {
-    list-style: none;
-}
 
-.list-item-inline {
-    display: inline;
-    padding: 0rem 0.5rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
-
-
-/* footer {
-    background-color: var(--primary-color);
-    padding: 1rem;
-    color: white;
-    text-align: center;
-    position:absolute;
-    bottom:0;
-    width: 100%;
+footer {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
 }
 
-footer .link{
-     color: white;
+footer p {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px;
 }
 
-footer ul {
-    padding-inline-start: 0px;
-}
-
-.footer-heading {
-    font-weight: bold;
-    font-size: large;
-} */
-
-footer{
-    position: absolute;
-    bottom: 0;
-}
-
-
-footer li {
-    list-style: none;
+a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
 }
